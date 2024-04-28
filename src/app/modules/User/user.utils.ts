@@ -101,6 +101,7 @@ export const generateAdminId = async () => {
   let currentId = (0).toString();
   const lastAdminId = await findLastAdminId();
 
+  console.log(lastAdminId)
   if (lastAdminId) {
     currentId = lastAdminId.substring(2);
   }
